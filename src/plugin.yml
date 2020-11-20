@@ -1,0 +1,5 @@
+name: KitPvP
+main: com.github.pedrosodev.plugin.KitPvP
+version: 1.0
+depend:
+  - SystemCore

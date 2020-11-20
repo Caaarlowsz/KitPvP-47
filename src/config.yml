@@ -1,0 +1,32 @@
+MySQL:
+
+  Host: '51.81.31.215'
+  DataBase: 's19_naomeche'
+  Username: 'u19_202G6gbo3C'
+  Password: '5^+!6ecaIGU8K1kNtnm^H5h8'
+  Port: 3306
+
+Servidor:
+
+  ##Caso queira ativar/desativar o Sistema de Login troque essa opção##
+  LoginSystem: true
+
+  ##Caso queira que os jogadores Premiums(Originais) se loguem automaticamente ative essa opção##
+  ##OBS.: Caso troque essa opção delete o arquivo "LoginDataBase.db" da pasta do plugin, para ficar livre de bugs##
+  PremiumAutoLogin: true
+
+
+  ##Caso queira ativar/desativar o Sistema de Bans troque essa opção##
+  BanSystem: true
+
+
+Messages:
+  ##A legenda abaixo só irá servir para as menssagens do Ban, TempBan, Mute, TempMute##
+  ##{breakline} - Quebra de Linha##
+  ##{staff} - Mostra quem baniu/mutou o jogador##
+  ##{Time} - Mostra quanto tempo ainda falta para terminar o ban/mute##
+  ##{reason} - Mostra o motivo do ban/mute##
+  Ban: 'Teste'
+  TempBan: 'Teste'
+  Mute: 'Teste'
+  TempMute: 'Teste'
