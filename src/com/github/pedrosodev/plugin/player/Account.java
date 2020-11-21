@@ -68,16 +68,16 @@ public class Account {
         return name;
     }
 
-    public int getKill() {
+    public int getKills() {
         return kill;
     }
 
-    public void setKill(int kill) {
+    public void setKills(int kill) {
         this.kill = kill;
     }
 
-    public void addKill(int amount) {
-        setKill(getKill()+amount);
+    public void addKills(int amount) {
+        setKills(getKills()+amount);
     }
 
     public int getDeaths() {
@@ -101,7 +101,7 @@ public class Account {
     }
 
     public void addKillStreak(int amount) {
-        setKill(getKillStreak()+amount);
+        setKillStreak(getKillStreak()+amount);
         if (getKillStreak() > getHighKillStreak()){
             setHighKillStreak(getKillStreak());
         }

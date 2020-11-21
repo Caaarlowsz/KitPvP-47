@@ -1,7 +1,10 @@
 package com.github.pedrosodev.plugin;
 
 import com.github.pedrosodev.plugin.commands.DirectoryCommand;
+import com.github.pedrosodev.plugin.commands.ban.BanCommand;
+import com.github.pedrosodev.plugin.commands.login.LoginCommand;
 import com.github.pedrosodev.plugin.database.MySQLManager;
+import com.github.pedrosodev.plugin.listener.PlayerListener;
 import com.github.pedrosodev.plugin.player.AccountManager;
 import com.github.pedrosodev.plugin.utils.ConfigServer;
 import com.google.gson.Gson;
@@ -11,6 +14,8 @@ import com.systemcore.pedrosogaymer.api.BanAPI.BanAPI;
 import com.systemcore.pedrosogaymer.api.Login.LoginAPI;
 import com.systemcore.pedrosogaymer.command.BukkitCommandFramework;
 import com.systemcore.pedrosogaymer.command.BukkitCommandLoader;
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.PluginManager;
 
 public class KitPvP extends CorePlugin {
 
@@ -61,18 +66,23 @@ public class KitPvP extends CorePlugin {
         debug("Config Carregada Com Sucesso.");
         if (ConfigServer.hasLoginSystem){
             loginAPI = new LoginAPI(ConfigServer.PremiumAutoLogin, this);
+            new BukkitCommandLoader(new BukkitCommandFramework(this)).loadCommandsFromPackage(LoginCommand.class.getPackage().toString().replace("package ", ""));
             debug("Sistema de Login Carregado Com Sucesso.");
         }
         if (ConfigServer.hasBanSystem){
             banAPI = new BanAPI(ConfigServer.getBanMessage, ConfigServer.getTempBanMessage,
                     ConfigServer.getMuteMessage, ConfigServer.getTempMuteMessage, this);
+            new BukkitCommandLoader(new BukkitCommandFramework(this)).loadCommandsFromPackage(BanCommand.class.getPackage().toString().replace("package ", ""));
+
             debug("Sistema de Bans Carregado Com Sucesso.");
         }
         debug("Conectando ao Banco de Dados.");
         mySQLManager = new MySQLManager();
         debug("Conexão Foi Concluida Com Sucesso.");
+        RegisterListeners();
+        debug("Eventos Carregados Com Sucesso.");
         new BukkitCommandLoader(new BukkitCommandFramework(this)).loadCommandsFromPackage(DirectoryCommand.class.getPackage().toString().replace("package ", ""));
-
+        Core.setNotPermMessage(Core.getNotPermMessage());
     }
 
     @Override
@@ -82,6 +92,13 @@ public class KitPvP extends CorePlugin {
 
     @Override
     public void stop() {
+
+    }
+
+    void RegisterListeners(){
+        PluginManager pluginManager = Bukkit.getPluginManager();
+
+        pluginManager.registerEvents(new PlayerListener(), this);
 
     }
 

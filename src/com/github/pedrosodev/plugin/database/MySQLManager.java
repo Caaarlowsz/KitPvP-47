@@ -19,8 +19,8 @@ public class MySQLManager {
                 ConfigServer.getMySQLDataBase,
                 ConfigServer.getMySQLPort);
         mySQL.tryConnection();
-        mySQL.createTable("account", "`Uuid` VARCHAR(128) PRIMARY KEY, `json` VARCHAR(8192))");
-        mySQL.createTable("players", "(`Name` VARCHAR(128) PRIMARY KEY, `Uuid` VARCHAR(128))");
+        mySQL.createTable("account", "`Uuid` VARCHAR(128) PRIMARY KEY, `json` VARCHAR(8192)");
+        mySQL.createTable("players", "`Name` VARCHAR(128) PRIMARY KEY, `Uuid` VARCHAR(128)");
         KitPvP.debug("Tabelas Criadas Com Sucesso.");
     }
 }

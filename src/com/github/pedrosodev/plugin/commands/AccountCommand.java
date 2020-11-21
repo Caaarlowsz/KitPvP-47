@@ -28,15 +28,17 @@ public class AccountCommand extends CommandClass {
         }
 
         if (uuid != null){
-            Account account = KitPvP.getAccountManager().loadAccount(uuid);
+            Account account = KitPvP.getAccountManager().getAccount(uuid);
             player.sendMessage(TextUtil.colorText("-=-=-=-=-=-=-=(*)=-=-=-=-=-=-=-"));
-            player.sendMessage(TextUtil.colorText("&bUUID: &f"+account.getUuid()));
-            player.sendMessage(TextUtil.colorText("&bName: &f"+account.getName()));
-            player.sendMessage(TextUtil.colorText("&bGroup: &f"+account.getGroup()));
-            player.sendMessage(TextUtil.colorText("&bRank: &f"+account.getRank()));
-            player.sendMessage(TextUtil.colorText("&bHigh KillStreak: &f"+account.getHighKillStreak()));
-            player.sendMessage(TextUtil.colorText("&bCoins: &f"+account.getCoins()));
-            player.sendMessage(TextUtil.colorText("&bXP: &f"+account.getXP()));
+            player.sendMessage(TextUtil.colorText(" &bUUID: &f"+account.getUuid().toString()));
+            player.sendMessage(TextUtil.colorText(" &bName: &f"+account.getName()));
+            player.sendMessage(TextUtil.colorText(" &bGroup: &f"+account.getGroup().name()));
+            player.sendMessage(TextUtil.colorText(" &bRank: &f"+account.getRank().name()));
+            player.sendMessage(TextUtil.colorText(" &bHigh KillStreak: &f"+account.getHighKillStreak()));
+            player.sendMessage(TextUtil.colorText(" &bKills: &f"+account.getKills()));
+            player.sendMessage(TextUtil.colorText(" &bDeaths: &f"+account.getDeaths()));
+            player.sendMessage(TextUtil.colorText(" &bCoins: &f"+account.getCoins()));
+            player.sendMessage(TextUtil.colorText(" &bXP: &f"+account.getXP()));
             player.sendMessage(TextUtil.colorText("-=-=-=-=-=-=-=(*)=-=-=-=-=-=-=-"));
         }else{
             player.sendMessage(TextUtil.colorText("&eAccount &fEssa conta não existe em nosso Banco de Dados!"));

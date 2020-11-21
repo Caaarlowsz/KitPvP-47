@@ -1,0 +1,13 @@
+kitpvp.admin.ban - Permite o jogador banir um player.
+
+kitpvp.admin.tempban - Permite o jogador banir um player temporariamente.
+
+kitpvp.admin.unban - Permite o jogador desbanir um player.
+
+kitpvp.admin.mute - Permite o jogador mutar um player.
+
+kitpvp.admin.tempmute - Permite o jogador mutar um player temporariamente.
+
+kitpvp.admin.unmute - Permite o jogador desmutar um player.
+
+kitpvp.admin.kick - Permite o jogador kickar um player.

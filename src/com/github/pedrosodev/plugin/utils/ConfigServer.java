@@ -27,5 +27,7 @@ public class ConfigServer {
     public static String getTempBanMessage = config.getString("Messages.TempBan").replace("{breakline}", "\n");
     public static String getMuteMessage = config.getString("Messages.Mute").replace("{breakline}", "\n");
     public static String getTempMuteMessage = config.getString("Messages.TempMute").replace("{breakline}", "\n");
+    public static String getKickMessage = config.getString("Messages.Kick").replace("{breakline}", "\n");
+    public static String getNoPermMessage = config.getString("Messages.NoPermission");
 
 }

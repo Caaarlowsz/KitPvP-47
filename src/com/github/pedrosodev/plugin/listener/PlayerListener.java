@@ -21,6 +21,7 @@ public class PlayerListener implements Listener {
             System.out.println("[Account] Criando uma nova conta ao jogador "+player.getName()+".");
             Account newAcount = new Account(player);
             KitPvP.getAccountManager().loadAccount(uuid, newAcount);
+            KitPvP.getAccountManager().saveAccount(newAcount);
         }else {
             System.out.println("[Account] A conta do jogador "+player.getName()+" foi carregada com sucesso.");
         }

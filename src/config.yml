@@ -1,9 +1,9 @@
 MySQL:
 
-  Host: '51.81.31.215'
-  DataBase: 's19_naomeche'
-  Username: 'u19_202G6gbo3C'
-  Password: '5^+!6ecaIGU8K1kNtnm^H5h8'
+  Host: '18.229.96.83'
+  DataBase: 's10124_Naomeche'
+  Username: 'u10124_TzFzHg36Zb'
+  Password: 'WJNjl=f2b5A9B77KAx!ZE@lV'
   Port: 3306
 
 Servidor:
@@ -21,7 +21,7 @@ Servidor:
 
 
 Messages:
-  ##A legenda abaixo só irá servir para as menssagens do Ban, TempBan, Mute, TempMute##
+  ##A legenda abaixo só irá servir para as menssagens do Ban, TempBan, Mute, TempMute, Kick##
   ##{breakline} - Quebra de Linha##
   ##{staff} - Mostra quem baniu/mutou o jogador##
   ##{Time} - Mostra quanto tempo ainda falta para terminar o ban/mute##
@@ -30,3 +30,6 @@ Messages:
   TempBan: 'Teste'
   Mute: 'Teste'
   TempMute: 'Teste'
+  Kick: 'Teste'
+
+  NoPermission: '&c&lPermission &fVoce não possui permissão.'
