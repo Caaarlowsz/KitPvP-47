@@ -1,4 +1,4 @@
-package com.github.pedrosodev.plugin.commands;
+package com.github.pedrosodev.plugin.commands.general;
 
 import com.systemcore.pedrosogaymer.command.BukkitCommandFramework;
 import com.systemcore.pedrosogaymer.command.CommandClass;

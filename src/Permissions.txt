@@ -11,3 +11,53 @@ kitpvp.admin.tempmute - Permite o jogador mutar um player temporariamente.
 kitpvp.admin.unmute - Permite o jogador desmutar um player.
 
 kitpvp.admin.kick - Permite o jogador kickar um player.
+
+kitpvp.admin.gamemode - Permite o jogador mudar seu modo de jogo.
+
+
+kitpvp.tag.[tag(Em minúsculo)] = Permite o player usar a tag.
+
+kitpvp.kit.[kit(Em minúsculo)] = Permite o player usar o kit.
+
+Kits:
+        Pvp
+        Kangaroo
+        AntiStomper
+        Viper
+        Snail
+        Gladiator
+        Stomper
+        Ninja
+        Boxer
+        Quickdrop
+        Anchor
+        Thor
+        Switcher
+        Monk
+        Fisherman
+
+Tags:
+        DEV
+        DONO
+        DIRETOR
+        ADMIN
+        GERENTE
+        MODERADORPLUS
+        MODERADORGC
+        TRIALGC
+        MODERADOR
+        TRIAL
+        BUILDER
+        HELPER
+        DESIGNER
+        YOUTUBERPLUS
+        YOUTUBER
+        MINIYOUTUBER
+        BETA
+        KING
+        MAGE
+        WARRIOR
+        TOP1
+        TOP2
+        TOP3
+        MEMBRO

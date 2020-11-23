@@ -1,4 +1,4 @@
-package com.github.pedrosodev.plugin.commands;
+package com.github.pedrosodev.plugin.commands.general;
 
 import com.github.pedrosodev.plugin.KitPvP;
 import com.systemcore.pedrosogaymer.api.BanAPI.constructor.Ban;
@@ -15,7 +15,7 @@ public class TesteCommand extends CommandClass {
 
     @BukkitCommandFramework.Command(name = "teste")
     public void Teste1Command(BukkitCommandFramework.CommandArgs cmd){
-        CommandSender player = cmd.getSender();
+        Player player = cmd.getPlayer();
         String[] strings = cmd.getArgs();
 
         Ban ban = new Ban(player.getName(), "Teste");
@@ -23,7 +23,7 @@ public class TesteCommand extends CommandClass {
 
     @BukkitCommandFramework.Command(name = "teste2")
     public void Teste2Command(BukkitCommandFramework.CommandArgs cmd){
-        CommandSender player = cmd.getSender();
+        Player player = cmd.getPlayer();
         String[] strings = cmd.getArgs();
 
     }

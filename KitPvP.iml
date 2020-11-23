@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="PaperSpigot-1.8.8-DiscordAPI" level="project" />
     <orderEntry type="library" name="SystemCore" level="project" />
-    <orderEntry type="library" name="QuantomSpigot" level="project" />
   </component>
 </module>

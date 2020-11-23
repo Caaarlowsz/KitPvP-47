@@ -18,9 +18,15 @@ public class ConfigServer {
     public static int getMySQLPort = config.getInt("MySQL.Port");
 
 
+    public static String getTokenDiscord = config.getString("Discord.Token");
+    public static String getStatusDiscord = config.getString("Discord.Status");
+
+
     public static boolean hasLoginSystem = config.getBoolean("Servidor.LoginSystem");
     public static boolean PremiumAutoLogin = config.getBoolean("Servidor.PremiumAutoLogin");
     public static boolean hasBanSystem = config.getBoolean("Servidor.BanSystem");
+    public static String getServerName = config.getString("Servidor.NomeDoServidor");
+    public static String getServerSite = config.getString("Servidor.Site");
 
 
     public static String getBanMessage = config.getString("Messages.Ban").replace("{breakline}", "\n");

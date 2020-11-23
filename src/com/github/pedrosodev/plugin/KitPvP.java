@@ -1,6 +1,6 @@
 package com.github.pedrosodev.plugin;
 
-import com.github.pedrosodev.plugin.commands.DirectoryCommand;
+import com.github.pedrosodev.plugin.commands.general.DirectoryCommand;
 import com.github.pedrosodev.plugin.commands.ban.BanCommand;
 import com.github.pedrosodev.plugin.commands.login.LoginCommand;
 import com.github.pedrosodev.plugin.database.MySQLManager;

@@ -6,6 +6,11 @@ MySQL:
   Password: 'WJNjl=f2b5A9B77KAx!ZE@lV'
   Port: 3306
 
+Discord:
+
+  Token: ''
+  Status: ''
+
 Servidor:
 
   ##Caso queira ativar/desativar o Sistema de Login troque essa opção##
@@ -19,17 +24,45 @@ Servidor:
   ##Caso queira ativar/desativar o Sistema de Bans troque essa opção##
   BanSystem: true
 
+  NomeDoServidor: '&b&lKit&f&lPvP'
+
+  Site: 'www.kitpvp.com.br'
+
 
 Messages:
   ##A legenda abaixo só irá servir para as menssagens do Ban, TempBan, Mute, TempMute, Kick##
   ##{breakline} - Quebra de Linha##
-  ##{staff} - Mostra quem baniu/mutou o jogador##
-  ##{Time} - Mostra quanto tempo ainda falta para terminar o ban/mute##
-  ##{reason} - Mostra o motivo do ban/mute##
-  Ban: 'Teste'
-  TempBan: 'Teste'
-  Mute: 'Teste'
-  TempMute: 'Teste'
-  Kick: 'Teste'
+  ##{staff} - Mostra quem baniu/mutou/kickou o jogador##
+  ##{time} - Mostra quanto tempo ainda falta para terminar o ban/mute##
+  ##{reason} - Mostra o motivo do ban/mute/kick##
 
-  NoPermission: '&c&lPermission &fVoce não possui permissão.'
+  Ban: '&cVocê foi banido permanentemente.{breakline}
+  &cPor: {staff}{breakline}
+  &cMotivo: {reason}{breakline}
+  {breakline}
+  &cBanido injustamente? Contante-nos em &bwww.kitpvp.com.br/appeal.{breakline}
+  &cCompre unban em &bwww.kitpvp.com.br/unban'
+
+  TempBan: '&cVocê foi banido temporariamente.{breakline}
+  &cPor: {staff}{breakline}
+  &cExpira em: {time}{breakline}
+  Motivo: {reason}{breakline}
+  {breakline}
+  &cBanido injustamente? Contante-nos em &bwww.kitpvp.com.br/appeal.{breakline}
+  &cCompre unmute em &bwww.kitpvp.com.br/unmute'
+
+  Mute: '&cVocê foi mutado permanentemente.{breakline}
+  &cPor: {staff}{breakline}
+  &cMotivo: {reason}{breakline}
+  &cCompre unmute em &bwww.kitpvp.com.br/unmute'
+
+  TempMute: '&cVocê foi mutado temporariamente.{breakline}
+  &cPor: {staff}{breakline}
+  &cMotivo: {reason}{breakline}
+  &cExpira em: {time}.'
+
+  Kick: '&cVocê foi expulso do servidor.{breakline}
+  &cPor: {staff}{breakline}
+  Motivo: {reason}'
+
+  NoPermission: '&c&lPermission &fVocê não possui permissão.'

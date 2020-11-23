@@ -37,7 +37,10 @@ public class KickCommand extends CommandClass {
         }
 
         Player playerKicked = Bukkit.getPlayerExact(strings[0]);
-        playerKicked.kickPlayer(ConfigServer.getKickMessage);
+        playerKicked.kickPlayer(ConfigServer.getKickMessage
+                .replace("{staff}", commandSender.getName())
+                .replace("{reason}", reason)
+        );
 
 
     }
